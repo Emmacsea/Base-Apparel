@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inpdet {
+    @apply text-primary-desaturatedred text-lg outline-none font-medium pl-4 py-3 h-10 border-2 rounded-full bg-transparent placeholder:text-primary-desaturatedred placeholder:bg-transparent
+}
+
+.btn {
+    @apply  bg-gradient-to-r from-gradient-grad3 to-gradient-grad4 rounded-full text-white flex justify-center items-center shadow-md h-10 w-1/4
+}
+
+.btn:hover {
+    @apply bg-gradient-to-r from-gradient-grad1 to-gradient-grad3
+}
