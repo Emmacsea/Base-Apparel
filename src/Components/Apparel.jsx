@@ -27,28 +27,28 @@ export default function Apparel({ email, onChangeEmail, onSubmitEmail }) {
     }
   
   return (
-    <div className=" md:h-screen sm:h-full w-full font-body">
-      <div className="flex md:flex-row sm:flex-col-reverse rounded-sm  h-full">
+    <div className=" md:h-screen h-full w-full font-body">
+      <div className="flex md:flex-row flex-col-reverse rounded-sm h-full">
         
-        <div className="md:py-16 sm:py-20 px-24 md:w-1/2 bg-gradient-to-r sm:text-center md:text-start from-left-image to-left-image bg-cover bg-right">
-          <div className="sm:hidden md:block mb-9">
+        <div className="md:py-16 py-20 md:px-24 px-7 md:w-1/2 bg-gradient-to-r text-center md:text-start from-left-image to-left-image bg-cover bg-right">
+          <div className="hidden md:block mb-9">
             <img className="w-24 " src={logo} alt="" />
           </div>
 
           <div>
-            <h2 className="text-primary-desaturatedred text-8xl font-light uppercase mb-4">
+            <h2 className="text-primary-desaturatedred md:text-8xl text-5xl tracking-widest md:tracking-wide md:text-start text-center md:font-light font-extralight uppercase mb-4">
               We&apos;re{" "}
-              <span className="text-neutral-dgrayishred font-bold">
+              <span className="text-neutral-dgrayishred md:font-bold font-semibold">
                 coming soon
               </span>
             </h2>
-            <p className="text-primary-desaturatedred text-lg font-light leading-6 mb-4">
+            <p className="text-primary-desaturatedred md:text-lg text-base md:font-light font-normal leading-6 mb-4">
               Hello fellow shoppers! We&apos;re currently building our new
               fashion store. Add your email below to stay up-to-date with
               announcements and our launch deals.
             </p>
 
-            <form action="" onSubmit={handleSubmitEmail} method="get">
+            <form action="" onSubmit={handleSubmitEmail} method="get" >
               <div className={`flex items-center inpdet relative my-8 ${error ? "border-primary-softred" : "border-primary-desaturatedred"}`}>
                 <div className="w-full flex ">
                   <input
@@ -58,26 +58,26 @@ export default function Apparel({ email, onChangeEmail, onSubmitEmail }) {
                     onChange={onChangeEmail}
                     placeholder="Email Address"
                   />
-                  {error && (<div><img className="mr-36" src={err} alt="" /></div>)}
+                  {error && (<div><img className="md:mr-36 mr-24" src={err} alt="" /></div>)}
                 </div>
-                <button type="submit" className="btn absolute left-96 right-0">
+                <button type="submit" className="btn absolute md:left-96 left-64 right-0">
                   <img className="w-4" src={arrow} alt="" />
                 </button>
               </div>
-                  {error && (<p className="text-primary-softred text-xs font-light -mt-8 lml-4 flex justify-start">{error}</p>)}
+                  {error && (<p className="text-primary-softred text-xs font-light -mt-8 ml-4 flex justify-start">{error}</p>)}
             </form>
           </div>
           
         </div>
 
         <div className="md:w-1/2">
-          <div className="sm:block md:hidden p-10">
+          <div className="block md:hidden p-10">
             <img className="w-24 " src={logo} alt="" />
           </div>
-          <div className="h-full sm:hidden md:block">
+          <div className="h-full hidden md:block">
             <img className="w-full h-full" src={desktop} alt="" />
           </div>
-          <div className="h-full sm:block md:hidden">
+          <div className="h-full block md:hidden">
             <img className="w-full h-full" src={mobile} alt="" />
           </div>
         </div>

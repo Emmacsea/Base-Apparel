@@ -6,11 +6,11 @@
 @tailwind utilities;
 
 .inpdet {
-    @apply text-primary-desaturatedred text-lg outline-none font-medium pl-4 py-3 h-10 border-2 rounded-full bg-transparent placeholder:text-primary-desaturatedred placeholder:bg-transparent
+    @apply text-primary-desaturatedred md:text-lg text-base outline-none font-medium pl-4 md:py-3 py-2 h-10 border-2 rounded-full bg-transparent placeholder:text-primary-desaturatedred placeholder:bg-transparent
 }
 
 .btn {
-    @apply  bg-gradient-to-r from-gradient-grad3 to-gradient-grad4 rounded-full text-white flex justify-center items-center shadow-md h-10 w-1/4
+    @apply  bg-gradient-to-r from-gradient-grad3 to-gradient-grad4 rounded-full text-white flex justify-center items-center shadow-md h-10 w-1/4 
 }
 
 .btn:hover {
